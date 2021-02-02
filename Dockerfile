@@ -15,6 +15,11 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY . .
 
+RUN curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id={1-B5sWk614-dWMj4NcAPIIWVsATLnNwRq” > /dev/null
+RUN curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=1-B5sWk614-dWMj4NcAPIIWVsATLnNwRq” -o GPT2-large_MyLittlePony.zip
+RUN unzip GPT2-large_MyLittlePony.zip
+RUN rm GPT2-large_MyLittlePony.zip
+
 
 EXPOSE 80
 
