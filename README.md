@@ -1,0 +1,1 @@
+Fine tuning data: https://www.kaggle.com/liury123/my-little-pony-transcript?select=clean_dialog.csv
