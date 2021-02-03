@@ -4,9 +4,9 @@
 
 This project generate My little pony script using GPT-2 model.
 
-Fine tuning data: https://www.kaggle.com/liury123/my-little-pony-transcript?select=clean_dialog.csv
+Fine tuning data: [Kaggle](https://www.kaggle.com/liury123/my-little-pony-transcript?select=clean_dialog.csv)
 
-Model download: https://drive.google.com/file/d/1-B5sWk614-dWMj4NcAPIIWVsATLnNwRq/view?usp=sharing
+Model download: [Google drive](https://drive.google.com/file/d/1-B5sWk614-dWMj4NcAPIIWVsATLnNwRq/view?usp=sharing)
 
 ### Model information
 
