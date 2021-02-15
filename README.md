@@ -26,12 +26,37 @@ Model download: [Google drive](https://drive.google.com/file/d/1-B5sWk614-dWMj4N
 
     name: The My little pony character name.
     text: The base of script.
-    length: The size of generated text.
+    length: The size of generated text.(min: 50)
+
+### Output foramt
+
+    {"0", [[character name, dialog], [character name, dialog], ...]}
 
 
 ## * With CLI *
 
-    curl -X POST "https://master-gpt2-my-little-pony-fpem123.endpoint.ainize.ai/mlp" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Twilight Sparkle" -F "text=Hello everyone" -F "length=150"
+### Input example
+
+    curl -X POST "https://master-gpt2-my-little-pony-fpem123.endpoint.ainize.ai/mlp" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Twilight Sparkle" -F "text=Hello everyone" -F "length=50"
+
+### Output example
+
+    {
+      "0": [
+        [
+          "Twilight Sparkle",
+          " Hello everypony, and welcome to the first annual Iron Pony Competition!"
+        ],
+        [
+          "Twilight Sparkle",
+          " [pause] Why don't you introduce your competitors?"
+        ],
+        [
+          "Rainbow Dash",
+          " [scoffs] That's barbaric. Why, no offense,"
+        ]
+      ]
+    }
 
 ## * With swagger *
 
