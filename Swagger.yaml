@@ -34,6 +34,12 @@ paths:
               name: Twilight Sparkle
               text: Hello everyone
               length: 150
+              
+              
+          curl example
+          
+              curl -X POST "https://master-gpt2-my-little-pony-fpem123.endpoint.ainize.ai/mlp" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Twilight Sparkle" -F "text=Hello everyone" -F "length=50"
+
 
         content:
           multipart/form-data:
